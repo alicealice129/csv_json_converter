@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+textarea {
+
+  font-family: var(--bs-font-monospace);
+
+  box-shadow: 5px 5px lightblue;
+
+  font-size: 12px;
+
+}

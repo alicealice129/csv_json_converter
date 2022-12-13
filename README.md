@@ -1,3 +1,32 @@
+# Converter CSV/JSON and Address Geocoding
+
+- I created a react componenet containing two text areas and 4 buttons
+
+- One text area to input csv content
+- One text areq to input json content
+- One button to convert csv to json
+- One button to convert json to csv
+- One button to geocode the addresses
+- One button to download the csv content as a file
+
+- The file Form.js contains the component mechanics.
+- The file ConvertCsvJson contains homemades functions to convert csv to array, array to csv, json to csv and csv to json, as it is homemade in a limited amount of time some csv format will not work as the specification is quite long to implement.
+- The file Geocode.js contains a function getting the addresses form the json and calling a free limited geocode api.
+- The geocode api is limited to 10 requests per second, and one address in the example is unknown. If an address is unknown, the function adds NAN to latitude and longitude.
+
+- There are some consistency checks on user input. For example, empty strings or invalid json format. 
+
+- I also add some test example using jest to test the component.
+
+## Development Environment
+- Langguage: JavaScript, HTML, CSS
+- Framework: React.js, Material UI
+- Others: jest (to test the component)
+  
+
+
+--------------------------------------------------------------
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
